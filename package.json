@@ -1,0 +1,39 @@
+{
+  "name": "@idealworld/ai-doc-project",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "Smart document editing with AI assistance",
+  "authors": [
+    {
+      "name": "gudaoxuri",
+      "email": "i@sunisle.org",
+      "url": "https://idealworld.group/"
+    }
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ideal-world/aidoc.git"
+  },
+  "keywords": [
+    "AI",
+    "intelligent",
+    "tools",
+    "document"
+  ],
+  "scripts": {
+    "dev": "pnpm --filter @idealworld/ai-doc dev",
+    "build": "pnpm --filter @idealworld/ai-doc build",
+    "editor:build": "pnpm --filter @idealworld/ai-editor build",
+    "test": "pnpm --filter @idealworld/ai-doc test:unit",
+    "lint": "pnpm --filter @idealworld/ai-doc lint:fix",
+    "check": "pnpm --filter @idealworld/ai-doc check",
+    "preview": "pnpm --filter @idealworld/ai-doc preview"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.3.0",
+    "eslint": "^9.21.0",
+    "eslint-plugin-svelte": "^3.0.2",
+    "typescript-eslint": "^8.25.0"
+  }
+}
